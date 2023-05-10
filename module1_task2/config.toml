@@ -1,5 +1,3 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Awesome Inc.'
-publishDir = 'dist'
-theme = 'ananke'
+title = 'My New Hugo Site'
