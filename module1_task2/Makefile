@@ -9,6 +9,4 @@ post: ##Create a new post using the post_name and post_title arguments
 	sed -i "s/title:.*/title: \"$(POST_TITLE)\"/" ./content/posts/$(POST_NAME).md
 help: ## Help lines on how to use this module
 		@echo "To use this website template"
-		@echo "  build      Build the project"
-		@echo "	 clean      Remove build artifacts"
-		@echo "  post      	create a new post in the /content/posts"
+		@awk -F ':.*?##' '/^[a-zA-Z_-]+:.*?##/ { printf "\033[36m%-20s\033[0m %s\n", $$1, $$2 }' $(MAKEFILE_LIST)
