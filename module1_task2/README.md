@@ -9,3 +9,5 @@
 ## Lifecycle:
     hugo
     hugo server -D
+    Clean:
+        The clean target removes any generated files and restores the repository to its original state.
