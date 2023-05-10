@@ -10,5 +10,5 @@ post: ##Create a new post using the post_name and post_title arguments
 help: ## Help lines on how to use this module
 		@echo "To use this website template"
 		@echo "  build      Build the project"
-    	@echo "  clean      Remove build artifacts"
+		@echo "	 clean      Remove build artifacts"
 		@echo "  post      	create a new post in the /content/posts"
