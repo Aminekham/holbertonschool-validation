@@ -3,7 +3,9 @@
 apt-get update
 apt-get upgrade
 
-apt install hugo
+apt-get install hugo
+apt-get install make
+
 
 hugo new site module1_task3
 cd module1_task3
