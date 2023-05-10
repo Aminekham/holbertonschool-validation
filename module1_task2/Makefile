@@ -7,7 +7,7 @@ clean: ##Removing the dist file that contains the output(The website)
 post: ##Create a new post using the post_name and post_title arguments
 	hugo new posts/$(POST_NAME).md
 	sed -i "s/title:.*/title: \"$(POST_TITLE)\"/" ./content/posts/$(POST_NAME).md
-help:
+help: ## Help lines on how to use this module
 	echo "To use this website template"
 	echo "Write hugo on ur terminal after"
 	echo "building and install the requirements"
