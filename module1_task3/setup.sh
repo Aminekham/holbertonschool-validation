@@ -1,9 +1,8 @@
 #!/bin/bash
 
-apt-get upgrade
-
-apt-get install hugo
-apt-get install make
+sudo apt-get update
+sudo apt-get install hugo
+sudo apt-get install make
 
 cd module1_task3
 
