@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Update package lists and install required packages
-sudo apt-get update
-sudo apt-get install -y hugo make
+sudo apt-get -y update
+sudo apt-get install -y hugo
+sudo apt-get install -y make
 
-# Change to the website directory
 cd module1_task3
 
-# Run the build command
 make build
+
+exit 0
