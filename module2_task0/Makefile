@@ -1,5 +1,5 @@
 build: ##Building the website based on this directory specified settings
-	go build 
+	go build -o awesome-api
 
 run: ##Removing the dist file that contains the output(The website)
 	awesome-api
