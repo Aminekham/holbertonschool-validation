@@ -1,17 +1,23 @@
 .PHONY: build run stop clean test help
 
-build: ##Building the website based on this directory specified settings
+build:## build
 	go build -o awesome-api
-run: ##Removing the dist file that contains the output(The website)
+
+run:## sun
 	./awesome-api > ./awesome-api.log 2>&1 &
 
-stop: ##Create a new post using the post_name and post_title arguments
-	kill "$(pgrep awesome-api)"
-clean: ##cleaning the api files
-	rm -rf awesome-api
-	rm -rf awesome-api.log
-test: ##testing the existance of the website
+stop: ## stop
+	pkill awesome-api || true
+
+clean: ## clean
+	pkill awesome-api || true
+	rm -f awesome-api
+	rm -f awesome-api.log
+
+
+test: ## test
+	curl http://localhost:9999
 	curl http://localhost:9999/health
-help: ## Help lines on how to use this module
-	@echo "To use this awesome-api"
-	@awk -F ':.*?##' '/^[a-zA-Z_-]+:.*?##/ { printf "\033[36m%-20s\033[0m %s\n", $$1, $$2 }' $(MAKEFILE_LIST)
+
+help: ## Display Help
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
