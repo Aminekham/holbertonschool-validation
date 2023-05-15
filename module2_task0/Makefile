@@ -11,6 +11,7 @@ clean: ##cleaning the api files
 	rm -rf awesome-api
 	rm -rf awesome-api.log
 test: ##testing the existance of the website
+	curl http://localhost:9999
 	curl http://localhost:9999/health
 help: ## Help lines on how to use this module
 	@echo "To use this awesome-api"
