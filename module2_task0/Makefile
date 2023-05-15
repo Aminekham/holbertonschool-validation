@@ -4,7 +4,6 @@ build: ##Building the website based on this directory specified settings
 run: ##Removing the dist file that contains the output(The website)
 	chmod u+x awesome-api
 	./awesome-api
-	./awesome-api >./awesome-api.log 2>&1 &
 stop: ##Create a new post using the post_name and post_title arguments
 	kill "$(pgrep awesome-api)"
 clean: ##cleaning the api files
