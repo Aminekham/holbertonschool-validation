@@ -1,3 +1,5 @@
+.PHONY: build run stop clean test help
+
 build: ##Building the website based on this directory specified settings
 	go build -o awesome-api
 run: ##Removing the dist file that contains the output(The website)
