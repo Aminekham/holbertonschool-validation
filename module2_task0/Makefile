@@ -8,6 +8,7 @@ run: ##Removing the dist file that contains the output(The website)
 stop: ##Create a new post using the post_name and post_title arguments
 	pkill awesome-api
 clean: ##cleaning the api files
+	pkill awesome-api
 	rm -rf awesome-api
 	rm -rf awesome-api.log
 test: ##testing the existance of the website
