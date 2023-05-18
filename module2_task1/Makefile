@@ -6,6 +6,7 @@ build: ##Building the API based on this directory specified settings
 	lint
 	go build -o awesome-api
 run: ##Runing the API
+	build
 	./awesome-api > ./awesome-api.log 2>&1 &
 
 stop: ##Killing the process of the runing API
