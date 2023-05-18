@@ -21,3 +21,5 @@
         testing the errors accuring in the API
     run:
         runing the API in the background
+    stop:
+        Killing the whole API
