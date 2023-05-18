@@ -19,3 +19,5 @@
         The help target generates a help screen.
     test:
         The test target generates the website and runs the Hugo Unit Tests.
+    stop:
+        The stop target stops the API.
