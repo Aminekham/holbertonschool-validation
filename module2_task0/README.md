@@ -17,3 +17,5 @@
         The post target creates a post inside of our website.
     help:
         The help target generates a help screen.
+    test:
+        The test target generates the website and runs the Hugo Unit Tests.
