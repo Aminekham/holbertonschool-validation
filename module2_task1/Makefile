@@ -3,6 +3,7 @@
 lint: ##Compile and check for errors
 	golangci-lint run
 build: ##Building the API based on this directory specified settings
+	golangci-lint run
 	go build -o awesome-api
 run: ##Runing the API
 	./awesome-api > ./awesome-api.log 2>&1 &
