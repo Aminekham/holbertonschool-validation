@@ -19,3 +19,5 @@
         The help target generates a help screen.
     lint:
         testing the errors accuring in the API
+    run:
+        runing the API in the background
